@@ -10,7 +10,14 @@ public class ListCities {
         cities.add("São paulo");
         cities.add("Ijui");
         cities.add("Viamão");
+        System.out.println("ANTES");
+        for(String city : cities) {
+            System.out.println(city);
+        }
+        System.out.println(cities.get(2) + " será removido.");
+        cities.remove(2);
 
+        System.out.println("DEPOIS");
         for(String city : cities) {
             System.out.println(city);
         }
