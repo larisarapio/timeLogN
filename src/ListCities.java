@@ -10,10 +10,22 @@ public class ListCities {
         cities.add("São paulo");
         cities.add("Ijui");
         cities.add("Viamão");
+
         System.out.println("ANTES");
         for(String city : cities) {
             System.out.println(city);
         }
+
+        boolean found = cities.stream().anyMatch(city -> city.equalsIgnoreCase("são paulo"));
+
+        if (found) {
+            System.out.println("\nA lista contém São paulo!");
+        } else {
+            System.out.println("\nSão paulo não está na lista.");
+        }
+
+
+
         System.out.println(cities.get(2) + " será removido.");
         cities.remove(2);
 
