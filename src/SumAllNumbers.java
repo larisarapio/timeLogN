@@ -16,5 +16,8 @@ public class SumAllNumbers {
         }
         System.out.println(sum);
 
+
+        
+
     }
 }
