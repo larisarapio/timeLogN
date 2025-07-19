@@ -9,6 +9,7 @@ public class PositionName {
         names.add("Alex");
         names.add("Demon");
         names.add("Ana");
+        names.add("Teste");
 
         String searchName= "Alex";
 
